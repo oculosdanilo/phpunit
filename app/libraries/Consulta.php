@@ -4,11 +4,11 @@ namespace app\libraries;
 
 class Consulta
 {
-  private float $numeroConsulta;
+  private int $numeroConsulta;
   private string $dataConsulta;
   private string $horaConsulta;
 
-  public function __construct(float $numeroConsulta, string $dataConsulta, string $horaConsulta)
+  public function __construct(int $numeroConsulta, string $dataConsulta, string $horaConsulta)
   {
     $this->numeroConsulta = $numeroConsulta;
     $this->dataConsulta = $dataConsulta;
