@@ -7,13 +7,14 @@ class Consulta
   private int $numeroConsulta;
   private string $dataConsulta;
   private string $horaConsulta;
+  private Agendamento $agendamentoConsulta;
 
-  public function __construct(int $numeroConsulta, string $dataConsulta, string $horaConsulta)
+  public function __construct(int $numeroConsulta, string $dataConsulta, string $horaConsulta, Agendamento $agendamentoConsulta)
   {
     $this->numeroConsulta = $numeroConsulta;
     $this->dataConsulta = $dataConsulta;
     $this->horaConsulta = $horaConsulta;
-
+    $this->agendamentoConsulta = $agendamentoConsulta;
   }
 
   public function setConsulta($numeroConsulta)
@@ -45,6 +46,16 @@ class Consulta
   public function getHora()
   {
     return $this->horaConsulta;
+  }
+
+  public function setAgendamento($agendamentoConsulta)
+  {
+    $this->agendamentoConsulta = $agendamentoConsulta;
+  }
+
+  public function getAgendamento()
+  {
+    return $this->agendamentoConsulta;
   }
 
 }

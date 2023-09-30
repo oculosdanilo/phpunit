@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 namespace app\libraries;
 
 class Agendamento
 {
-  private float $numeroAgendamento;
+  private int $numeroAgendamento;
   private string $dataAgendamento;
   private string $horaAgendamento;
   private string $queixa;

@@ -7,8 +7,6 @@ class Especialidade
   private float $numeroRegistro;
   private string $publicoAlvo;
 
-
-
   public function __construct(string $nomeEspecialidade, float $numeroRegistro, string $publicoAlvo)
   {
     $this->nomeEspecialidade = $nomeEspecialidade;
@@ -48,9 +46,5 @@ class Especialidade
   }
 
 }
-
-// $especialidadePublico = new Especialidade("Clinico Geral", 90876, "Adulto");
-
-// var_dump( $especialidadePublico);
 
 ?>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 
 namespace app\libraries;
@@ -6,16 +6,20 @@ namespace app\libraries;
 class Medico
 {
   private string $nomeMedico;
-  private float $telefoneMedico;
+  private int $telefoneMedico;
   private string $enderecoMedico;
   private string $crm;
+  private array $consultasMedico;
+  private array $especialidadesMedico;
 
-  public function __construct(string $nomeMedico, float $telefoneMedico, string $enderecoMedico, string $crm)
+  public function __construct(string $nomeMedico, float $telefoneMedico, string $enderecoMedico, string $crm, array $consultasMedico, array $especialidadesMedico)
   {
     $this->nomeMedico = $nomeMedico;
     $this->telefoneMedico = $telefoneMedico;
     $this->enderecoMedico = $enderecoMedico;
     $this->crm = $crm;
+    $this->especialidadesMedico = $especialidadesMedico;
+    $this->consultasMedico = $consultasMedico;
   }
 
   public function setNome($nomeMedico)
@@ -56,6 +60,26 @@ class Medico
   public function getCrm()
   {
     return $this->crm;
+  }
+
+  public function getConsultas()
+  {
+    return $this->consultasMedico;
+  }
+
+  public function setConsultas($consultasMedico)
+  {
+    $this->consultasMedico = $consultasMedico;
+  }
+
+  public function getEspecialidades()
+  {
+    return $this->especialidadesMedico;
+  }
+
+  public function setEspecialidades($especialidadesMedico)
+  {
+    $this->especialidadesMedico = $especialidadesMedico;
   }
 }
 

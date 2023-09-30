@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 
 namespace app\libraries;
@@ -11,8 +11,9 @@ class Paciente
   private float $numeroBeneficiario;
   private string $doencasPrevias;
   private string $remedioDeUsoContinuo;
+  private array $consultas;
 
-  public function __construct(string $nomePaciente, string $enderecoPaciente, float $telefonePaciente, float $numeroBeneficiario, string $doencasPrevias, string $remedioDeUsoContinuo)
+  public function __construct(string $nomePaciente, string $enderecoPaciente, float $telefonePaciente, float $numeroBeneficiario, string $doencasPrevias, string $remedioDeUsoContinuo, array $consultas)
   {
     $this->nomePaciente = $nomePaciente;
     $this->enderecoPaciente = $enderecoPaciente;
@@ -20,6 +21,7 @@ class Paciente
     $this->numeroBeneficiario = $numeroBeneficiario;
     $this->doencasPrevias = $doencasPrevias;
     $this->remedioDeUsoContinuo = $remedioDeUsoContinuo;
+    $this->consultas = $consultas;
   }
 
   public function setNome($nomePaciente)
@@ -81,7 +83,17 @@ class Paciente
   {
     return $this->remedioDeUsoContinuo;
   }
+
+  public function getConsultas()
+  {
+    return $this->consultas;
+  }
+
+  public function setConsultas($consultas)
+  {
+    $this->consultas = $consultas;
+  }
 }
 
 
-?>  
+?>
