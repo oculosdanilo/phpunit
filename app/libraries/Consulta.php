@@ -1,18 +1,14 @@
-<?php 
+<?php
 
 namespace app\libraries;
-/*use app\libraries\Agendamento;*/
 
 class Consulta
-{  
+{
   private float $numeroConsulta;
   private string $dataConsulta;
   private string $horaConsulta;
 
-
-
-
-  public function __construct(float $numeroConsulta, String $dataConsulta, string $horaConsulta)
+  public function __construct(float $numeroConsulta, string $dataConsulta, string $horaConsulta)
   {
     $this->numeroConsulta = $numeroConsulta;
     $this->dataConsulta = $dataConsulta;
@@ -50,7 +46,7 @@ class Consulta
   {
     return $this->horaConsulta;
   }
-  
+
 }
 
 ?>
