@@ -1,27 +1,23 @@
 {
-    "name": "aluno/htdocs",
-    "description": "Teste Hospital",
-    "autoload": {
-        "psr-4": {
-            "app\\libraries\\": "app/libraries"
-        }
-    },
-
-    "autoload-dev": {
-        "psr-4": {
-            "tests\\": "tests/"
-        }
-    },
-    
-    "authors": [
-        {
-            "name": "Camila, Danilo e Juliana"
-        }
-    ],
-    "phpunit/php-code-coverage": "^4.0.3",
-    "require-dev": {
-            "phpunit/phpunit": "^9.6"
+  "name": "aluno/htdocs",
+  "description": "Teste Hospital",
+  "autoload": {
+    "psr-4": {
+      "app\\libraries\\": "app/libraries"
     }
-    
-    
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Camila, Danilo e Juliana"
+    }
+  ],
+  "phpunit/php-code-coverage": "^4.0.3",
+  "require-dev": {
+    "phpunit/phpunit": "^9.6"
+  }
 }
